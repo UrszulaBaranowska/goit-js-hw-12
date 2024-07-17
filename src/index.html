@@ -4,20 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-12</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/loaders.css/loaders.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
+    <section class="header">
+      <h1>
+        goit-js-hw-12 - Zadanie — Wyszukiwanie obrazów z użyciem biblioteki
+        AXIOS
+      </h1>
       <img src="./img/javascript.svg" alt="" />
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <header class="header">
+      <form id="search-form">
+        <input
+          type="text"
+          name="query"
+          placeholder="Search images..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <div id="gallery" class="gallery"></div>
+      <div id="loader" class="loader"></div>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
