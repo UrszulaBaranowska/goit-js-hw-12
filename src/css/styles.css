@@ -118,3 +118,28 @@ header {
     transform: rotate(25deg);
   }
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#load-more-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#load-more-btn:hover {
+  background-color: #218838;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
